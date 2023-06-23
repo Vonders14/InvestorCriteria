@@ -4,7 +4,7 @@ import os
 # File paths
 source_file_path = r"C:\Users\dhoffmann\Downloads\Apollo RE Investor Criteria_MASTER - COPY_bad text removed.xlsx"
 destination_directory = "C:/Users/dhoffmann/Documents"
-target_workbook_name = "MULTIFAMILY_RE Criteria v2.xlsx"
+target_workbook_name = "MULTIFAMILY_RE Criteria v3.xlsx"
 
 # Load source workbook
 source_workbook = openpyxl.load_workbook(source_file_path)
@@ -24,7 +24,10 @@ for cell in source_sheet[1]:
 destination_sheet.append(header_row)
 
 # Define keywords to search for
-keywords = ["apartment", "multifamily", "multi-family"]
+keywords = ["apartment",
+"apartments",
+"multifamily",
+"multi-family"]
 
 # Iterate through each row in the source sheet
 for row in source_sheet.iter_rows(min_row=2, values_only=True):

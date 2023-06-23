@@ -3,9 +3,9 @@ import os
 import re
 
 # File paths
-source_file_path = r"C:\Users\dhoffmann\Wisnia Capital\RE Investor Scraping - Documents\RE - Investor Scraping\MASTER - FILES\Apollo RE Investor Criteria_MASTER - Copy.xlsx"
+source_file_path = r"C:\Users\dhoffmann\Documents\Book2-property retest.xlsx"
 destination_directory = "C:/Users/dhoffmann/Documents"
-target_workbook_name = "Apollo RE Investor Criteria_industrial.xlsx"
+target_workbook_name = "mf retest.xlsx"
 
 # Load source workbook
 source_workbook = openpyxl.load_workbook(source_file_path)
@@ -26,20 +26,8 @@ destination_sheet.append(header_row)
 
 # Define keywords to search for
 keywords = [
-    "Flex",
-    "industrial",
-    "Manufacturing",
-    "Data center",
-    "industrial Outdoor Storage",
-    "industrial storage",
-    "IOS",
-    "Research & Development",
-    "Warehouse",
-    "warehouses",
-    "Cold Storage",
-    "Logistics",
-    "Showroom",
-    "R&D"
+    "industrial"
+   
 ]
 
 # Iterate through each row in the source sheet
